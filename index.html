@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>T H E B O Y Z</title>
+      <link rel="shortcut icon" href="icon.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <style>
+   </style>
+   </head>
+   <body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <div class="container mt-2">
+        <a class="navbar-brand" href="home.html"><img src="icon.png" width="80px" height="75px"></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mymenu">
+          <ul class="navbar-nav ms-5 ps-5">
+            <li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="About Us.html">About</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="Shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold me-4 pe-3" data-bs-toggle="modal" data-bs-target="#mymodal" href="#" >Login</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="#">Register</a></li>
+          </ul>
+          <div class="d-flex ms-4 ps-5" style="height: 100px;">
+          <div class="vr" style="width: 5px;"></div>
+          </div>
+        <div class="collapse navbar-collapse me-2 justify-content-end" id="mymenu">
+          <form class="d-flex" role="search">
+           <input class="form-control me-2 mt-3 mb-4" style="height:50px; width: 300px;" type="search" placeholder="Search...">
+           <button class="btn btn-outline-dark mt-3 mb-4" style="height:50px;" type="submit">Search</button>
+         </form>
+        </div>
+        </div>
+        </div> 
+      </div>
+    </div>
+    </nav>
+
+      <div class="container-fluid mt-2">
+               <div id="carouselcaption" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselcaption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselcaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselcaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                      <img src="Images/nft1.webp" class="d-block w-100" alt="slide5" height="675px">
+                      <div class="carousel-caption text-start" style="background-color:rgba(67, 66, 66, 0.3)">
+                        <h1 class="fw-bold">NFT meaning and definition</h1>
+                        <p class="fs-5 fw-bold">NFT stands for ‘non-fungible token’. Non-fungible means that something is unique and can’t be replaced.By contrast, physical money and cryptocurrencies are fungible, which means they can be traded or exchanged for one another. </p>
+                        <a href="About Us.html" class="btn btn-outline-primary ">View details</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="Images/nft2.jpeg" class="d-block w-100" alt="slide6" height="675px">
+                      <div class="carousel-caption" style="background-color:rgba(67, 66, 66, 0.3)">
+                        <h1 class="fw-bold">How do NFTs work?</h1>
+                        <p class="fs-5 fw-bold">Non-fungible tokens or NTFs are cryptographic assets which sit on a blockchain – that is, a distributed public ledger that records transactions. </p>
+                        <a href="About Us.html" class="btn btn-outline-primary ">View details</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="Images/nft3.jpg" class="d-block w-100" alt="slide7" height="675px">
+                      <div class="carousel-caption text-end" style="background-color:rgba(67, 66, 66, 0.3)">
+                        <h1 class="fw-bold">Who started the NFTs?</h1>
+                        <p class="fs-5 fw-bold">It was created on the Namecoin blockchain in 2014 by Kevin McCoy.</p>
+                        <a href="About Us.html" class="btn btn-outline-primary ">View details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcaption" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselcaption" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            
+      </div>
+      <hr>
+      <div class="container-fluid" style="animation: myAnim 5s ease 0s 1 normal forwards;">
+        <h1 class="fw-bold d-flex justify-content-center" >Editions</h1>
+        <div class="row row-cols-1 row-cols-lg-3">
+              <div class="col-md-4 mt-1">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="fw-bold mt-1">Hybrid Edition</h4>
+                  </div>
+                  <img src="Images/hybrid.2.png" class="card-img-top" alt="img11">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">Balance</h3>
+                    <div class="mt-2"><h5><i class="fa-solid fa-star"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end">
+                    <a href="Hybrid Edition.html" class="btn btn-outline-primary ">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-1">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="fw-bold mt-1">Open Edition</h4>
+                  </div>
+                  <img src="Images/open.2.png" class="card-img-top" alt="img14">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">The Crown Of Creation</h3>
+                    <div class="mt-2"><h5><i class="fa-solid fa-star"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end">
+                    <a href="Open Edition.html" class="btn btn-outline-primary ">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-1">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="fw-bold mt-1">Dynamic Edition</h4>
+                  </div>
+                  <iframe src="Images/dynamic.1.mp4" autoplay="1" frameborder="0" style="height: 270px; width: 448px;"></iframe>
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">Dark Spectre</h3>
+                    <div class="mt-2"><h5><i class="fa-solid fa-star"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end">
+                    <a href="Dynamic Edition.html" class="btn btn-outline-primary ">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="row">
+              <div class="col-md-4 mt-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="fw-bold mt-1">Standard Edition</h4>
+                  </div>
+                  <img src="Images/standard.2.png" class="card-img-top" alt="img11">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">Lighting Mcqueen</h3>
+                    <div class="mt-2"><h5><i class="fa-solid fa-star"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end">
+                    <a href="Standard Edition.html" class="btn btn-outline-primary ">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="fw-bold mt-1">Limited Edition</h4>
+                  </div>
+                  <img src="Images/limited.5.png" class="card-img-top" alt="img14">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">Build-A-Bear</h3>
+                    <div class="mt-2"><h5><i class="fa-solid fa-star"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star"></i></h5></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end">
+                    <a href="Limited Edition.html" class="btn btn-outline-primary ">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="fw-bold mt-1">Single Edition</h4>
+                  </div>
+                  <img src="Images/single.2.png" class="card-img-top" alt="img11">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold">WRATH</h3>
+                    <div class="mt-2"><h5><i class="fa-solid fa-star"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star" style="color: rgba(15, 129, 155, 0.5);"></i></h5></div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end">
+                    <a href="Single Edition.html" class="btn btn-outline-primary ">See More</a>
+                  </div>
+                </div>
+              </div>
+      </div>
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <div class="row">
+          <h1 class="fw-bold d-flex justify-content-center">Trending/Ranking</h1>
+          <div class="ms-5 ps-5 my-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gold" class="bi bi-1-square" viewBox="0 0 16 16">
+              <path d="M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"/>
+            </svg>
+            <img src="Profile/bmmz.png" class="rounded-circle me-5" width="80">
+            <h5 class="ms-5">GodzKiro</h5>
+          </div>
+          <div class="ms-5 ps-5 my-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="silver" class="bi bi-2-square" viewBox="0 0 16 16">
+              <path d="M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"/>
+            </svg>
+            <img src="Profile/bmmz.png" class="rounded-circle me-5" width="80">
+            <h5 class="ms-5">GodzKiro</h5>
+          </div>
+          <div class="ms-5 ps-5 my-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="brown" class="bi bi-3-square" viewBox="0 0 16 16">
+              <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z"/>
+            </svg>
+            <img src="Profile/bmmz.png" class="rounded-circle me-5" width="80">
+            <h5 class="ms-5">GodzKiro</h5>
+          </div>
+        </div>  
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <footer class="py-5">
+          <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+            <li class="nav-item mb-2 fw-bold"><a href="home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="Aboutus.html" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="Shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="login_form.html" class="nav-link p-0 text-body-secondary">Login</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="regristration_form.html" class="nav-link p-0 text-body-secondary">Register</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+            <li class="nav-item mb-2 fw-bold"><a href="Single Edition.html" class="nav-link p-0 text-body-secondary">Single Edition</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="Limited Edition.html" class="nav-link p-0 text-body-secondary">Limited Edition</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="Standard Edition.html" class="nav-link p-0 text-body-secondary">Standard Edition</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+            <li class="nav-item mb-2 fw-bold"><a href="Dynamic Edition.html" class="nav-link p-0 text-body-secondary">Dynamic Edition</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="Open Edition.html" class="nav-link p-0 text-body-secondary">Open Edition</a></li>
+            <li class="nav-item mb-2 fw-bold"><a href="Hybrid Edition.html" class="nav-link p-0 text-body-secondary">Hybrid Edition</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+            <h5 class="fw-bold">Subscribe to our The Boyz Offical Website</h5>
+            <p class="">Get high quality NFTs with perfect price.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-outline-danger" type="button">Subscribe</button>
+            </div>
+            </form>
+            <div class="back-to-top d-flex justify-content-end mt-4">
+              <a href="#" class="link">Back to Top</a>
+            </div>
+          </div>
+          </div>
+        
+          <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+          <p class="fw-bold mt-4">&copy; 2023 The Boyz Offical Website. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <h5 class="mt-4">Sponsored By</h5><h2 class="mt-3 ms-2">X</h2>
+            <li class="me-5 mb-3"><a class="link-body-emphasis" href="#"><img src="footer_icon.png" alt="" width="100px"></a></li>
+            <li class="ms-3 mt-4"><a class="link-body-emphasis" href="https://twitter.com/login"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="26" height="26"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
+            <li class="ms-3 mt-4"><a class="link-body-emphasis" href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="26" height="26"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+            <li class="ms-3 mt-4"><a class="link-body-emphasis" href="https://www.instagram.com/accounts/login/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" wdith="26" height="26"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a></li>
+          </ul>
+          </div>
+        </footer>
+        </div>
+   </body>
+</html>

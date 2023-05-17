@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<style>
+	.nav-pills .nav-item .nav-link {border-radius: 0%;}
+</style>
+<body>
+      <div class="wrapper">
+		<nav class="navbar navbar-expand-md bg-light navbar-light">
+			<div class="container mt-2">
+				<a class="navbar-brand" href="home.html"><img src="icon.png" width="80px" height="75px"></a>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="mymenu">
+					<ul class="navbar-nav ms-5 ps-5">
+						<li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="#">About</a></li>
+						<li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="Shop.html">Shop</a></li>
+						<li class="nav-item"><a class="nav-link fw-bold me-4 pe-3" data-bs-toggle="modal" data-bs-target="#mymodal" href="#" >Login</a></li>
+						<li class="nav-item"><a class="nav-link fw-bold me-4 pe-4" href="#">Register</a></li>
+					</ul>
+					<div class="d-flex ms-4 ps-5" style="height: 100px;">
+					<div class="vr" style="width: 5px;"></div>
+				  </div>
+				<div class="collapse navbar-collapse me-2 justify-content-end" id="mymenu">
+				  <form class="d-flex" role="search">
+					 <input class="form-control me-2 mt-3 mb-4" style="height:50px; width: 300px;" type="search" placeholder="Search...">
+					 <button class="btn btn-outline-dark mt-3 mb-4" style="height:50px;" type="submit">Search</button>
+				 </form>
+				</div>
+				</div>
+				</div> 
+			</div>
+		</div>
+		</nav>
+			<ul class="nav nav-pills px-2" style="line-height: 50px; background-color: rgba(14, 13, 13, 0.4); ">
+				<li class="nav-item ms-3 ps-3">
+					<a class="nav-link" href="Hybrid Edition.html">Hybrid Edition</a>
+				</li>
+				<li class="nav-item ms-5 ps-5">
+					<a class="nav-link" href="Open Edition.html">Open Edition</a>
+				</li>
+				<li class="nav-item ms-5 ps-5">
+					<a class="nav-link" href="Dynamic Edition.html">Dynamic Edition</a>
+				</li>
+				<li class="nav-item ms-5 ps-5">
+					<a class="nav-link" href="Standard Edition.html">Standard Edition</a>
+				</li>
+				<li class="nav-item ms-5 ps-5">
+					<a class="nav-link" href="Limited Edition.html">Limited Edition</a>
+				</li>
+				<li class="nav-item ms-5 ps-5">
+					<a class="nav-link" href="Single Edition.html">Single Edition</a>
+				</li>
+			</ul>
+		<div class="modal" id="mymodal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row">
+								<div>
+									<h3 class="mb-3">Login</h3>
+									<form class="shadow p-3">
+										<div class="my-3 form-floating">
+											<input class="form-control" placeholder="email/username">
+											<label for="email" class="text-muted">Email/Username</label>
+											<small class="form-text text-muted">Username must not include special characters.</small>
+										</div>
+										<div class="mb-3">
+											<label for="psw" class="form-label">Password</label>
+											<input class="form-control" placeholder="Password" id="psw">
+										</div>
+										<div class="mb-3">
+											<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+											<a href="#" class="float-end text-decroration-none">Reset Password</a>
+										</div>
+										<div>
+											<button class="btn btn-primary">Log In</button>
+										</div>
+										<hr>
+										<p class="text-center">If you have no account, <a href="#">Register Now</a></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer border-0">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save Changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <!--NFT card-->
+         <div class="content">
+			<div class="container">
+				<div class="row">
+				<script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+				<coingecko-coin-price-marquee-widget  class="mt-3 mb-3" coin-ids="bitcoin,ethereum" currency="usd" locale="en"></coingecko-coin-price-marquee-widget>
+        <div class="ms-5 mt-2"><h3>Hybrid Edition<i class="fa-solid fa-star ms-2"  style="color: rgba(15, 129, 155, 0.5);"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3></div>
+					<div class="card m-5 shadow-lg bg-light col-md-6 col-sm-3" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+						<div class="row">
+						  <div class="col-md-4">
+							<img src="Hybrid Edition/1.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+						  </div>
+						  <div class="col-md-8">
+							<div class="card-body">
+							  <h5 class="card-title">A Star Among Men</h5>
+								<div class="dropdown mt-2">
+									<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+										<img src="Profile/my profile.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+									</a>
+									<ul class="dropdown-menu">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+										<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalzkh"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+										<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalzkh2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+										<li><hr class="dropdown-divider"></li>
+										<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+									</ul>
+								</div>
+								<!--Profile-->
+								<div class="modal" id="mymodalzkh">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header border-0">
+												<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+											</div>
+											<div class="modal-body text-dark border-0">
+												<div class="container d-flex justify-content-center align-items-center">
+													<div class="row">
+														<div>
+															<div class="card border-0">
+																<div class="upper">
+																  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																</div>											
+																<div class="user text-center">												  
+																  <div class="profile">												  
+																	<img src="Profile/my profile.png" class="rounded-circle" width="80">																	
+																  </div>											  
+																</div>												  											  
+																<div class="mt-5 text-center">											  
+																  <h4 class="mb-0 text-dark">GodzKiro(Admin)</h4>
+																  <span class="text-muted d-block mb-2">Yangon</span>											  
+																  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																	<div class="stats">
+																	  <h6 class="mb-0">Followers</h6>
+																	  <span>6,969</span>								  
+																	</div>											  
+																	<div class="stats">
+																	  <h6 class="mb-0">Projects</h6>
+																	  <span>69</span>							  
+																	</div>				  
+																	<div class="stats">
+																	  <h6 class="mb-0">Ranks</h6>
+																	  <span>999+</span>												  
+																	</div>																	
+																  </div>																  
+																</div>																 
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Add Friend-->
+								<div class="modal" id="mymodalzkh2">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header border-0">
+												<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							  <p class="card-text">Published : 15.5.2023</p>
+							  <p class="card-text">Type : Hybrid Edition</p>
+							</div>
+							<div class="card-footer d-flex">
+							  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+							  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+									<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+								</svg>
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <!--Buy Now-->
+					   <div class="modal" id="mymodal3">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+									</div>
+									<div class="modal-body text-dark">
+										<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+											<div class="row">
+													<div class="card" style="height: 65vh;">
+														<h5>Fl Price - 16.9
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+															</svg>
+														</h5>														  											  
+														  <div>
+															<form class="shadow p-3 mt-3">
+																<div class="my-3 form-floating">
+																	<input class="form-control" placeholder="email/username">
+																	<label for="email" class="text-muted">Bitcoin No.</label>
+																	<small class="form-text text-muted">Number must not include special characters.</small>
+																</div>
+																<div class="mb-3">
+																	<label for="psw" class="form-label">Password</label>
+																	<input class="form-control" placeholder="Password" id="psw">
+																</div>
+																<div class="mb-3">
+																	<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																	<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																</div>
+																<div>
+																	<button class="btn btn-primary">Pay Now</button>
+																</div>
+																<hr>
+																<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+															</form>
+														</div>			
+													</div>																 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+							<div class="row">
+							  <div class="col-md-4">
+								<img src="Hybrid Edition/2.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Balance</h5>
+									<div class="dropdown mt-2">
+										<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+											<img src="Profile/bmmz.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+										</a>
+										<ul class="dropdown-menu">
+											<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+											<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalbmmz"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+											<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalbmmz2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+
+											<li><hr class="dropdown-divider"></li>
+											<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+										</ul>
+									</div>
+									<!--Profile-->
+									<div class="modal" id="mymodalbmmz">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header border-0">
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+												<div class="modal-body text-dark border-0">
+													<div class="container d-flex justify-content-center align-items-center">
+														<div class="row">
+															<div>
+																<div class="card border-0">
+																	<div class="upper">
+																	  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																	</div>											
+																	<div class="user text-center">												  
+																	  <div class="profile">												  
+																		<img src="Profile/bmmz.png" class="rounded-circle" width="80">																	
+																	  </div>											  
+																	</div>												  											  
+																	<div class="mt-5 text-center">											  
+																	  <h4 class="mb-0 text-dark">StussyBhone(CoAdmin)</h4>
+																	  <span class="text-muted d-block mb-2">Yangon</span>											  
+																	  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																	  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																		<div class="stats">
+																		  <h6 class="mb-0">Followers</h6>
+																		  <span>6,969</span>								  
+																		</div>											  
+																		<div class="stats">
+																		  <h6 class="mb-0">Projects</h6>
+																		  <span>69</span>							  
+																		</div>				  
+																		<div class="stats">
+																		  <h6 class="mb-0">Ranks</h6>
+																		  <span>999+</span>												  
+																		</div>																	
+																	  </div>																  
+																	</div>																 
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Add Friend-->
+									<div class="modal" id="mymodalbmmz2">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header border-0">
+													<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								  <p class="card-text">Published : 15.5.2023</p>
+								  <p class="card-text">Type : Hybrid Edition</p>
+								</div>
+								<div class="card-footer d-flex">
+								  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+								  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+										<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+									</svg>
+								  </p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <!--Buy Now-->
+						   <div class="modal" id="mymodal3">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+										</div>
+										<div class="modal-body text-dark">
+											<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+												<div class="row">
+														<div class="card" style="height: 65vh;">
+															<h5>Fl Price - 16.9
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																	<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																</svg>
+															</h5>														  											  
+															  <div>
+																<form class="shadow p-3 mt-3">
+																	<div class="my-3 form-floating">
+																		<input class="form-control" placeholder="email/username">
+																		<label for="email" class="text-muted">Bitcoin No.</label>
+																		<small class="form-text text-muted">Number must not include special characters.</small>
+																	</div>
+																	<div class="mb-3">
+																		<label for="psw" class="form-label">Password</label>
+																		<input class="form-control" placeholder="Password" id="psw">
+																	</div>
+																	<div class="mb-3">
+																		<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																		<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																	</div>
+																	<div>
+																		<button class="btn btn-primary">Pay Now</button>
+																	</div>
+																	<hr>
+																	<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																</form>
+															</div>			
+														</div>																 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+								<div class="row">
+								  <div class="col-md-4">
+									<img src="Hybrid Edition/3.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+								  </div>
+								  <div class="col-md-8">
+									<div class="card-body">
+									  <h5 class="card-title">In Blur</h5>
+										<div class="dropdown mt-2">
+											<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+												<img src="Profile/mtc.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+											</a>
+											<ul class="dropdown-menu">
+												<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalmtc"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+												<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalmtc2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+	
+												<li><hr class="dropdown-divider"></li>
+												<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+											</ul>
+										</div>
+										<!--Profile-->
+										<div class="modal" id="mymodalmtc">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header border-0">
+														<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+													</div>
+													<div class="modal-body text-dark border-0">
+														<div class="container d-flex justify-content-center align-items-center">
+															<div class="row">
+																<div>
+																	<div class="card border-0">
+																		<div class="upper">
+																		  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																		</div>											
+																		<div class="user text-center">												  
+																		  <div class="profile">												  
+																			<img src="Profile/mtc.png" class="rounded-circle" width="80">																	
+																		  </div>											  
+																		</div>												  											  
+																		<div class="mt-5 text-center">											  
+																		  <h4 class="mb-0 text-dark">Min Thaw-Kun(CoAdmin)</h4>
+																		  <span class="text-muted d-block mb-2">Yangon</span>											  
+																		  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																		  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																			<div class="stats">
+																			  <h6 class="mb-0">Followers</h6>
+																			  <span>6,969</span>								  
+																			</div>											  
+																			<div class="stats">
+																			  <h6 class="mb-0">Projects</h6>
+																			  <span>69</span>							  
+																			</div>				  
+																			<div class="stats">
+																			  <h6 class="mb-0">Ranks</h6>
+																			  <span>999+</span>												  
+																			</div>																	
+																		  </div>																  
+																		</div>																 
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--Add Friend-->
+										<div class="modal" id="mymodalmtc2">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header border-0">
+														<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+														<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									  <p class="card-text">Published : 15.5.2023</p>
+									  <p class="card-text">Type : Hybrid Edition</p>
+									</div>
+									<div class="card-footer d-flex">
+									  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+									  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+											<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+										</svg>
+									  </p>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							  <!--Buy Now-->
+							   <div class="modal" id="mymodal3">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+											</div>
+											<div class="modal-body text-dark">
+												<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+													<div class="row">
+															<div class="card" style="height: 65vh;">
+																<h5>Fl Price - 16.9
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																		<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																	</svg>
+																</h5>														  											  
+																  <div>
+																	<form class="shadow p-3 mt-3">
+																		<div class="my-3 form-floating">
+																			<input class="form-control" placeholder="email/username">
+																			<label for="email" class="text-muted">Bitcoin No.</label>
+																			<small class="form-text text-muted">Number must not include special characters.</small>
+																		</div>
+																		<div class="mb-3">
+																			<label for="psw" class="form-label">Password</label>
+																			<input class="form-control" placeholder="Password" id="psw">
+																		</div>
+																		<div class="mb-3">
+																			<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																			<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																		</div>
+																		<div>
+																			<button class="btn btn-primary">Pay Now</button>
+																		</div>
+																		<hr>
+																		<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																	</form>
+																</div>			
+															</div>																 
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+									<div class="row">
+									  <div class="col-md-4">
+                      <img src="Hybrid Edition/4.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+									  </div>
+									  <div class="col-md-8">
+										<div class="card-body">
+										  <h5 class="card-title">Agony on the Opensea</h5>
+											<div class="dropdown mt-2">
+												<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+													<img src="Profile/hhz.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+												</a>
+												<ul class="dropdown-menu">
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+													<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalhhz"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+													<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalhhz2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+		
+													<li><hr class="dropdown-divider"></li>
+													<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+												</ul>
+											</div>
+											<!--Profile-->
+											<div class="modal" id="mymodalhhz">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header border-0">
+															<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+														</div>
+														<div class="modal-body text-dark border-0 ">
+															<div class="container d-flex justify-content-center align-items-center">
+																<div class="row">
+																	<div>
+																		<div class="card border-0">
+																			<div class="upper">
+																			  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																			</div>											
+																			<div class="user text-center">												  
+																			  <div class="profile">												  
+																				<img src="Profile/hhz.png" class="rounded-circle" width="80">																	
+																			  </div>											  
+																			</div>												  											  
+																			<div class="mt-5 text-center">											  
+																			  <h4 class="mb-0 text-dark">GodHanz(CoAdmin)</h4>
+																			  <span class="text-muted d-block mb-2">Yangon</span>											  
+																			  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																			  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																				<div class="stats">
+																				  <h6 class="mb-0">Followers</h6>
+																				  <span>6,969</span>								  
+																				</div>											  
+																				<div class="stats">
+																				  <h6 class="mb-0">Projects</h6>
+																				  <span>69</span>							  
+																				</div>				  
+																				<div class="stats">
+																				  <h6 class="mb-0">Ranks</h6>
+																				  <span>999+</span>												  
+																				</div>																	
+																			  </div>																  
+																			</div>																 
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+												<!--Add Friend-->
+												<div class="modal" id="mymodalhhz2">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header border-0">
+																<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+															</div>
+														</div>
+													</div>
+												</div>
+										  <p class="card-text">Published : 15.5.2023</p>
+										  <p class="card-text">Type : Hybrid Edition</p>
+										</div>
+										<div class="card-footer d-flex">
+										  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+										  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+												<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+											</svg>
+										  </p>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								  <!--Buy Now-->
+								   <div class="modal" id="mymodal3">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+												</div>
+												<div class="modal-body text-dark">
+													<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+														<div class="row">
+																<div class="card" style="height: 65vh;">
+																	<h5>Fl Price - 16.9
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																			<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																		</svg>
+																	</h5>														  											  
+																	  <div>
+																		<form class="shadow p-3 mt-3">
+																			<div class="my-3 form-floating">
+																				<input class="form-control" placeholder="email/username">
+																				<label for="email" class="text-muted">Bitcoin No.</label>
+																				<small class="form-text text-muted">Number must not include special characters.</small>
+																			</div>
+																			<div class="mb-3">
+																				<label for="psw" class="form-label">Password</label>
+																				<input class="form-control" placeholder="Password" id="psw">
+																			</div>
+																			<div class="mb-3">
+																				<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																				<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																			</div>
+																			<div>
+																				<button class="btn btn-primary">Pay Now</button>
+																			</div>
+																			<hr>
+																			<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																		</form>
+																	</div>			
+																</div>																 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+										<div class="row">
+										  <div class="col-md-4">
+											<img src="Hybrid Edition/5.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+										  </div>
+										  <div class="col-md-8">
+											<div class="card-body">
+											  <h5 class="card-title">Remnant 002</h5>
+												<div class="dropdown mt-2">
+													<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+														<img src="Profile/my profile.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+													</a>
+													<ul class="dropdown-menu">
+														<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+														<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalzkh"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+														<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalzkh2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+														<li><hr class="dropdown-divider"></li>
+														<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+													</ul>
+												</div>
+												<!--Profile-->
+												<div class="modal" id="mymodalzkh">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header border-0">
+																<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+															</div>
+															<div class="modal-body text-dark border-0">
+																<div class="container d-flex justify-content-center align-items-center">
+																	<div class="row">
+																		<div>
+																			<div class="card border-0">
+																				<div class="upper">
+																				  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																				</div>											
+																				<div class="user text-center">												  
+																				  <div class="profile">												  
+																					<img src="Profile/my profile.png" class="rounded-circle" width="80">																	
+																				  </div>											  
+																				</div>												  											  
+																				<div class="mt-5 text-center">											  
+																				  <h4 class="mb-0 text-dark">GodzKiro(Admin)</h4>
+																				  <span class="text-muted d-block mb-2">Yangon</span>											  
+																				  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																				  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																					<div class="stats">
+																					  <h6 class="mb-0">Followers</h6>
+																					  <span>6,969</span>								  
+																					</div>											  
+																					<div class="stats">
+																					  <h6 class="mb-0">Projects</h6>
+																					  <span>69</span>							  
+																					</div>				  
+																					<div class="stats">
+																					  <h6 class="mb-0">Ranks</h6>
+																					  <span>999+</span>												  
+																					</div>																	
+																				  </div>																  
+																				</div>																 
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--Add Friend-->
+												<div class="modal" id="mymodalzkh2">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header border-0">
+																<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											  <p class="card-text">Published : 15.5.2023</p>
+											  <p class="card-text">Type : Hybrid Edition</p>
+											</div>
+											<div class="card-footer d-flex">
+											  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+											  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+													<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+												</svg>
+											  </p>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									  <!--Buy Now-->
+									   <div class="modal" id="mymodal3">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+													</div>
+													<div class="modal-body text-dark">
+														<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+															<div class="row">
+																	<div class="card" style="height: 65vh;">
+																		<h5>Fl Price - 16.9
+																			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																				<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																			</svg>
+																		</h5>														  											  
+																		  <div>
+																			<form class="shadow p-3 mt-3">
+																				<div class="my-3 form-floating">
+																					<input class="form-control" placeholder="email/username">
+																					<label for="email" class="text-muted">Bitcoin No.</label>
+																					<small class="form-text text-muted">Number must not include special characters.</small>
+																				</div>
+																				<div class="mb-3">
+																					<label for="psw" class="form-label">Password</label>
+																					<input class="form-control" placeholder="Password" id="psw">
+																				</div>
+																				<div class="mb-3">
+																					<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																					<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																				</div>
+																				<div>
+																					<button class="btn btn-primary">Pay Now</button>
+																				</div>
+																				<hr>
+																				<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																			</form>
+																		</div>			
+																	</div>																 
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+				
+										<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+											<div class="row">
+											  <div class="col-md-4">
+												<img src="Hybrid Edition/6.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+											  </div>
+											  <div class="col-md-8">
+												<div class="card-body">
+												  <h5 class="card-title">A Walk</h5>
+													<div class="dropdown mt-2">
+														<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+															<img src="Profile/bmmz.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+														</a>
+														<ul class="dropdown-menu">
+															<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+															<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalbmmz"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+															<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalbmmz2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+				
+															<li><hr class="dropdown-divider"></li>
+															<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+														</ul>
+													</div>
+													<!--Profile-->
+													<div class="modal" id="mymodalbmmz">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header border-0">
+																	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																</div>
+																<div class="modal-body text-dark border-0">
+																	<div class="container d-flex justify-content-center align-items-center">
+																		<div class="row">
+																			<div>
+																				<div class="card border-0">
+																					<div class="upper">
+																					  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																					</div>											
+																					<div class="user text-center">												  
+																					  <div class="profile">												  
+																						<img src="Profile/bmmz.png" class="rounded-circle" width="80">																	
+																					  </div>											  
+																					</div>												  											  
+																					<div class="mt-5 text-center">											  
+																					  <h4 class="mb-0 text-dark">StussyBhone(CoAdmin)</h4>
+																					  <span class="text-muted d-block mb-2">Yangon</span>											  
+																					  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																					  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																						<div class="stats">
+																						  <h6 class="mb-0">Followers</h6>
+																						  <span>6,969</span>								  
+																						</div>											  
+																						<div class="stats">
+																						  <h6 class="mb-0">Projects</h6>
+																						  <span>69</span>							  
+																						</div>				  
+																						<div class="stats">
+																						  <h6 class="mb-0">Ranks</h6>
+																						  <span>999+</span>												  
+																						</div>																	
+																					  </div>																  
+																					</div>																 
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!--Add Friend-->
+													<div class="modal" id="mymodalbmmz2">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header border-0">
+																	<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																</div>
+															</div>
+														</div>
+													</div>
+												  <p class="card-text">Published : 15.5.2023</p>
+												  <p class="card-text">Type : Hybrid Edition</p>
+												</div>
+												<div class="card-footer d-flex">
+												  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+												  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+														<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+													</svg>
+												  </p>
+												</div>
+											  </div>
+											</div>
+										  </div>
+										  <!--Buy Now-->
+										   <div class="modal" id="mymodal3">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+														</div>
+														<div class="modal-body text-dark">
+															<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																<div class="row">
+																		<div class="card" style="height: 65vh;">
+																			<h5>Fl Price - 16.9
+																				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																					<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																				</svg>
+																			</h5>														  											  
+																			  <div>
+																				<form class="shadow p-3 mt-3">
+																					<div class="my-3 form-floating">
+																						<input class="form-control" placeholder="email/username">
+																						<label for="email" class="text-muted">Bitcoin No.</label>
+																						<small class="form-text text-muted">Number must not include special characters.</small>
+																					</div>
+																					<div class="mb-3">
+																						<label for="psw" class="form-label">Password</label>
+																						<input class="form-control" placeholder="Password" id="psw">
+																					</div>
+																					<div class="mb-3">
+																						<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																						<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																					</div>
+																					<div>
+																						<button class="btn btn-primary">Pay Now</button>
+																					</div>
+																					<hr>
+																					<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																				</form>
+																			</div>			
+																		</div>																 
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+				
+											<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+												<div class="row">
+												  <div class="col-md-4">
+													<img src="Hybrid Edition/7.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+												  </div>
+												  <div class="col-md-8">
+													<div class="card-body">
+													  <h5 class="card-title">Minutes by Espen Kluge</h5>
+														<div class="dropdown mt-2">
+															<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+																<img src="Profile/mtc.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+															</a>
+															<ul class="dropdown-menu">
+																<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalmtc"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+																<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalmtc2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+					
+																<li><hr class="dropdown-divider"></li>
+																<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+															</ul>
+														</div>
+														<!--Profile-->
+														<div class="modal" id="mymodalmtc">
+															<div class="modal-dialog">
+																<div class="modal-content">
+																	<div class="modal-header border-0">
+																		<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																	</div>
+																	<div class="modal-body text-dark border-0">
+																		<div class="container d-flex justify-content-center align-items-center">
+																			<div class="row">
+																				<div>
+																					<div class="card border-0">
+																						<div class="upper">
+																						  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																						</div>											
+																						<div class="user text-center">												  
+																						  <div class="profile">												  
+																							<img src="Profile/mtc.png" class="rounded-circle" width="80">																	
+																						  </div>											  
+																						</div>												  											  
+																						<div class="mt-5 text-center">											  
+																						  <h4 class="mb-0 text-dark">Min Thaw-Kun(CoAdmin)</h4>
+																						  <span class="text-muted d-block mb-2">Yangon</span>											  
+																						  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																						  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																							<div class="stats">
+																							  <h6 class="mb-0">Followers</h6>
+																							  <span>6,969</span>								  
+																							</div>											  
+																							<div class="stats">
+																							  <h6 class="mb-0">Projects</h6>
+																							  <span>69</span>							  
+																							</div>				  
+																							<div class="stats">
+																							  <h6 class="mb-0">Ranks</h6>
+																							  <span>999+</span>												  
+																							</div>																	
+																						  </div>																  
+																						</div>																 
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--Add Friend-->
+														<div class="modal" id="mymodalmtc2">
+															<div class="modal-dialog">
+																<div class="modal-content">
+																	<div class="modal-header border-0">
+																		<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																		<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													  <p class="card-text">Published : 15.5.2023</p>
+													  <p class="card-text">Type : Hybrid Edition</p>
+													</div>
+													<div class="card-footer d-flex">
+													  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+													  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+															<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+														</svg>
+													  </p>
+													</div>
+												  </div>
+												</div>
+											  </div>
+											  <!--Buy Now-->
+											   <div class="modal" id="mymodal3">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+															</div>
+															<div class="modal-body text-dark">
+																<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																	<div class="row">
+																			<div class="card" style="height: 65vh;">
+																				<h5>Fl Price - 16.9
+																					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																						<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																					</svg>
+																				</h5>														  											  
+																				  <div>
+																					<form class="shadow p-3 mt-3">
+																						<div class="my-3 form-floating">
+																							<input class="form-control" placeholder="email/username">
+																							<label for="email" class="text-muted">Bitcoin No.</label>
+																							<small class="form-text text-muted">Number must not include special characters.</small>
+																						</div>
+																						<div class="mb-3">
+																							<label for="psw" class="form-label">Password</label>
+																							<input class="form-control" placeholder="Password" id="psw">
+																						</div>
+																						<div class="mb-3">
+																							<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																							<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																						</div>
+																						<div>
+																							<button class="btn btn-primary">Pay Now</button>
+																						</div>
+																						<hr>
+																						<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																					</form>
+																				</div>			
+																			</div>																 
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+				
+												<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+													<div class="row">
+													  <div class="col-md-4">
+														<img src="Hybrid Edition/8.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+													  </div>
+													  <div class="col-md-8">
+														<div class="card-body">
+														  <h5 class="card-title">Creep</h5>
+															<div class="dropdown mt-2">
+																<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+																	<img src="Profile/hhz.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+																</a>
+																<ul class="dropdown-menu">
+																	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																	<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalhhz"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+																	<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalhhz2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+						
+																	<li><hr class="dropdown-divider"></li>
+																	<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+																</ul>
+															</div>
+															<!--Profile-->
+															<div class="modal" id="mymodalhhz">
+																<div class="modal-dialog">
+																	<div class="modal-content">
+																		<div class="modal-header border-0">
+																			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																		</div>
+																		<div class="modal-body text-dark border-0 ">
+																			<div class="container d-flex justify-content-center align-items-center">
+																				<div class="row">
+																					<div>
+																						<div class="card border-0">
+																							<div class="upper">
+																							  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																							</div>											
+																							<div class="user text-center">												  
+																							  <div class="profile">												  
+																								<img src="Profile/hhz.png" class="rounded-circle" width="80">																	
+																							  </div>											  
+																							</div>												  											  
+																							<div class="mt-5 text-center">											  
+																							  <h4 class="mb-0 text-dark">GodHanz(CoAdmin)</h4>
+																							  <span class="text-muted d-block mb-2">Yangon</span>											  
+																							  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																							  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																								<div class="stats">
+																								  <h6 class="mb-0">Followers</h6>
+																								  <span>6,969</span>								  
+																								</div>											  
+																								<div class="stats">
+																								  <h6 class="mb-0">Projects</h6>
+																								  <span>69</span>							  
+																								</div>				  
+																								<div class="stats">
+																								  <h6 class="mb-0">Ranks</h6>
+																								  <span>999+</span>												  
+																								</div>																	
+																							  </div>																  
+																							</div>																 
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+																<!--Add Friend-->
+																<div class="modal" id="mymodalhhz2">
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-header border-0">
+																				<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+														  <p class="card-text">Published : 15.5.2023</p>
+														  <p class="card-text">Type : Hybrid Edition</p>
+														</div>
+														<div class="card-footer d-flex">
+														  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+														  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+															</svg>
+														  </p>
+														</div>
+													  </div>
+													</div>
+												  </div>
+												  <!--Buy Now-->
+												   <div class="modal" id="mymodal3">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																</div>
+																<div class="modal-body text-dark">
+																	<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																		<div class="row">
+																				<div class="card" style="height: 65vh;">
+																					<h5>Fl Price - 16.9
+																						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																							<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																						</svg>
+																					</h5>														  											  
+																					  <div>
+																						<form class="shadow p-3 mt-3">
+																							<div class="my-3 form-floating">
+																								<input class="form-control" placeholder="email/username">
+																								<label for="email" class="text-muted">Bitcoin No.</label>
+																								<small class="form-text text-muted">Number must not include special characters.</small>
+																							</div>
+																							<div class="mb-3">
+																								<label for="psw" class="form-label">Password</label>
+																								<input class="form-control" placeholder="Password" id="psw">
+																							</div>
+																							<div class="mb-3">
+																								<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																								<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																							</div>
+																							<div>
+																								<button class="btn btn-primary">Pay Now</button>
+																							</div>
+																							<hr>
+																							<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																						</form>
+																					</div>			
+																				</div>																 
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+				
+													<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+														<div class="row">
+														  <div class="col-md-4">
+                                <img src="Hybrid Edition/9.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+														  </div>
+														  <div class="col-md-8">
+															<div class="card-body">
+															  <h5 class="card-title">Valeria</h5>
+																<div class="dropdown mt-2">
+																	<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+																		<img src="Profile/my profile.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+																	</a>
+																	<ul class="dropdown-menu">
+																		<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																		<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalzkh"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+																		<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalzkh2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+																		<li><hr class="dropdown-divider"></li>
+																		<li><a href="#" class="dropdown-item">More Info</a></li>
+																	</ul>
+																</div>
+																<!--Profile-->
+																<div class="modal" id="mymodalzkh">
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-header border-0">
+																				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																			</div>
+																			<div class="modal-body text-dark border-0">
+																				<div class="container d-flex justify-content-center align-items-center">
+																					<div class="row">
+																						<div>
+																							<div class="card border-0">
+																								<div class="upper">
+																								  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																								</div>											
+																								<div class="user text-center">												  
+																								  <div class="profile">												  
+																									<img src="Profile/my profile.png" class="rounded-circle" width="80">																	
+																								  </div>											  
+																								</div>												  											  
+																								<div class="mt-5 text-center">											  
+																								  <h4 class="mb-0 text-dark">GodzKiro(Admin)</h4>
+																								  <span class="text-muted d-block mb-2">Yangon</span>											  
+																								  <button class="btn btn-primary btn-sm follow">Follow</button>												  
+																								  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																									<div class="stats">
+																									  <h6 class="mb-0">Followers</h6>
+																									  <span>6,969</span>								  
+																									</div>											  
+																									<div class="stats">
+																									  <h6 class="mb-0">Projects</h6>
+																									  <span>69</span>							  
+																									</div>				  
+																									<div class="stats">
+																									  <h6 class="mb-0">Ranks</h6>
+																									  <span>999+</span>												  
+																									</div>																	
+																								  </div>																  
+																								</div>																 
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!--Add Friend-->
+																<div class="modal" id="mymodalzkh2">
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-header border-0">
+																				<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															  <p class="card-text">Published : 15.5.2023</p>
+															  <p class="card-text">Type : Hybrid Edition</p>
+															</div>
+															<div class="card-footer d-flex">
+															  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+															  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																	<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																</svg>
+															  </p>
+															</div>
+														  </div>
+														</div>
+													  </div>
+													  <!--Buy Now-->
+													   <div class="modal" id="mymodal3">
+															<div class="modal-dialog">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																	</div>
+																	<div class="modal-body text-dark">
+																		<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																			<div class="row">
+																					<div class="card" style="height: 65vh;">
+																						<h5>Fl Price - 16.9
+																							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																								<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																							</svg>
+																						</h5>														  											  
+																						  <div>
+																							<form class="shadow p-3 mt-3">
+																								<div class="my-3 form-floating">
+																									<input class="form-control" placeholder="email/username">
+																									<label for="email" class="text-muted">Bitcoin No.</label>
+																									<small class="form-text text-muted">Number must not include special characters.</small>
+																								</div>
+																								<div class="mb-3">
+																									<label for="psw" class="form-label">Password</label>
+																									<input class="form-control" placeholder="Password" id="psw">
+																								</div>
+																								<div class="mb-3">
+																									<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																									<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																								</div>
+																								<div>
+																									<button class="btn btn-primary">Pay Now</button>
+																								</div>
+																								<hr>
+																								<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																							</form>
+																						</div>			
+																					</div>																 
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+								
+														<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+															<div class="row">
+															  <div class="col-md-4">
+																<img src="Hybrid Edition/10.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+															  </div>
+															  <div class="col-md-8">
+																<div class="card-body">
+																  <h5 class="card-title">Silver Cord I</h5>
+																	<div class="dropdown mt-2">
+																		<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+																			<img src="Profile/bmmz.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+																		</a>
+																		<ul class="dropdown-menu">
+																			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																			<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalbmmz"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+																			<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalbmmz2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+								
+																			<li><hr class="dropdown-divider"></li>
+																			<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+																		</ul>
+																	</div>
+																	<!--Profile-->
+																	<div class="modal" id="mymodalbmmz">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header border-0">
+																					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																				</div>
+																				<div class="modal-body text-dark border-0">
+																					<div class="container d-flex justify-content-center align-items-center">
+																						<div class="row">
+																							<div>
+																								<div class="card border-0">
+																									<div class="upper">
+																									  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																									</div>											
+																									<div class="user text-center">												  
+																									  <div class="profile">												  
+																										<img src="Profile/bmmz.png" class="rounded-circle" width="80">																	
+																									  </div>											  
+																									</div>												  											  
+																									<div class="mt-5 text-center">											  
+																									  <h4 class="mb-0 text-dark">StussyBhone(CoAdmin)</h4>
+																									  <span class="text-muted d-block mb-2">Yangon</span>											  
+																									  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																									  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																										<div class="stats">
+																										  <h6 class="mb-0">Followers</h6>
+																										  <span>6,969</span>								  
+																										</div>											  
+																										<div class="stats">
+																										  <h6 class="mb-0">Projects</h6>
+																										  <span>69</span>							  
+																										</div>				  
+																										<div class="stats">
+																										  <h6 class="mb-0">Ranks</h6>
+																										  <span>999+</span>												  
+																										</div>																	
+																									  </div>																  
+																									</div>																 
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<!--Add Friend-->
+																	<div class="modal" id="mymodalbmmz2">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header border-0">
+																					<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																  <p class="card-text">Published : 15.5.2023</p>
+																  <p class="card-text">Type : Hybrid Edition</p>
+																</div>
+																<div class="card-footer d-flex">
+																  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+																  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																		<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																	</svg>
+																  </p>
+																</div>
+															  </div>
+															</div>
+														  </div>
+														  <!--Buy Now-->
+														   <div class="modal" id="mymodal3">
+																<div class="modal-dialog">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																		</div>
+																		<div class="modal-body text-dark">
+																			<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																				<div class="row">
+																						<div class="card" style="height: 65vh;">
+																							<h5>Fl Price - 16.9
+																								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																									<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																								</svg>
+																							</h5>														  											  
+																							  <div>
+																								<form class="shadow p-3 mt-3">
+																									<div class="my-3 form-floating">
+																										<input class="form-control" placeholder="email/username">
+																										<label for="email" class="text-muted">Bitcoin No.</label>
+																										<small class="form-text text-muted">Number must not include special characters.</small>
+																									</div>
+																									<div class="mb-3">
+																										<label for="psw" class="form-label">Password</label>
+																										<input class="form-control" placeholder="Password" id="psw">
+																									</div>
+																									<div class="mb-3">
+																										<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																										<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																									</div>
+																									<div>
+																										<button class="btn btn-primary">Pay Now</button>
+																									</div>
+																									<hr>
+																									<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																								</form>
+																							</div>			
+																						</div>																 
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+								
+															<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+																<div class="row">
+																  <div class="col-md-4">
+																	<img src="Hybrid Edition/11.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+																  </div>
+																  <div class="col-md-8">
+																	<div class="card-body">
+																	  <h5 class="card-title">Silver Cord III</h5>
+																		<div class="dropdown mt-2">
+																			<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+																				<img src="Profile/mtc.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+																			</a>
+																			<ul class="dropdown-menu">
+																				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																				<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalmtc"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+																				<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalmtc2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+									
+																				<li><hr class="dropdown-divider"></li>
+																				<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+																			</ul>
+																		</div>
+																		<!--Profile-->
+																		<div class="modal" id="mymodalmtc">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header border-0">
+																						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																					</div>
+																					<div class="modal-body text-dark border-0">
+																						<div class="container d-flex justify-content-center align-items-center">
+																							<div class="row">
+																								<div>
+																									<div class="card border-0">
+																										<div class="upper">
+																										  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																										</div>											
+																										<div class="user text-center">												  
+																										  <div class="profile">												  
+																											<img src="Profile/mtc.png" class="rounded-circle" width="80">																	
+																										  </div>											  
+																										</div>												  											  
+																										<div class="mt-5 text-center">											  
+																										  <h4 class="mb-0 text-dark">Min Thaw-Kun(CoAdmin)</h4>
+																										  <span class="text-muted d-block mb-2">Yangon</span>											  
+																										  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																										  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																											<div class="stats">
+																											  <h6 class="mb-0">Followers</h6>
+																											  <span>6,969</span>								  
+																											</div>											  
+																											<div class="stats">
+																											  <h6 class="mb-0">Projects</h6>
+																											  <span>69</span>							  
+																											</div>				  
+																											<div class="stats">
+																											  <h6 class="mb-0">Ranks</h6>
+																											  <span>999+</span>												  
+																											</div>																	
+																										  </div>																  
+																										</div>																 
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<!--Add Friend-->
+																		<div class="modal" id="mymodalmtc2">
+																			<div class="modal-dialog">
+																				<div class="modal-content">
+																					<div class="modal-header border-0">
+																						<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	  <p class="card-text">Published : 15.5.2023</p>
+																	  <p class="card-text">Type : Hybrid Edition</p>
+																	</div>
+																	<div class="card-footer d-flex">
+																	  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+																	  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																			<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																		</svg>
+																	  </p>
+																	</div>
+																  </div>
+																</div>
+															  </div>
+															  <!--Buy Now-->
+															   <div class="modal" id="mymodal3">
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-header">
+																				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																			</div>
+																			<div class="modal-body text-dark">
+																				<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																					<div class="row">
+																							<div class="card" style="height: 65vh;">
+																								<h5>Fl Price - 16.9
+																									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																										<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																									</svg>
+																								</h5>														  											  
+																								  <div>
+																									<form class="shadow p-3 mt-3">
+																										<div class="my-3 form-floating">
+																											<input class="form-control" placeholder="email/username">
+																											<label for="email" class="text-muted">Bitcoin No.</label>
+																											<small class="form-text text-muted">Number must not include special characters.</small>
+																										</div>
+																										<div class="mb-3">
+																											<label for="psw" class="form-label">Password</label>
+																											<input class="form-control" placeholder="Password" id="psw">
+																										</div>
+																										<div class="mb-3">
+																											<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																											<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																										</div>
+																										<div>
+																											<button class="btn btn-primary">Pay Now</button>
+																										</div>
+																										<hr>
+																										<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																									</form>
+																								</div>			
+																							</div>																 
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+								
+																<div class="card m-5 shadow-lg bg-light col-md-6" style="max-width: 540px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+																	<div class="row">
+																	  <div class="col-md-4">
+																		<img src="Hybrid Edition/12.jpg" class="img-fluid rounded-start" alt="..." style="height: 235px;">
+																	  </div>
+																	  <div class="col-md-8">
+																		<div class="card-body">
+																		  <h5 class="card-title">Torrent</h5>
+																			<div class="dropdown mt-2">
+																				<a href="#" class="text-decoration-none link-dark" data-bs-toggle="dropdown">
+																					<img src="Profile/hhz.png" alt="profile" width="32" height="32" class="rounded-circle mb-2">
+																				</a>
+																				<ul class="dropdown-menu">
+																					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																					<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalhhz"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+																					<li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#mymodalhhz2"><i class="fa-regular fa-plus me-2"></i>Add Friend</a></li>
+										
+																					<li><hr class="dropdown-divider"></li>
+																					<button type="button" class="btn btn-outline-danger mx-2"><i class="fa-regular fa-heart"></i> Favourite</button>
+																				</ul>
+																			</div>
+																			<!--Profile-->
+																			<div class="modal" id="mymodalhhz">
+																				<div class="modal-dialog">
+																					<div class="modal-content">
+																						<div class="modal-header border-0">
+																							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																						</div>
+																						<div class="modal-body text-dark border-0 ">
+																							<div class="container d-flex justify-content-center align-items-center">
+																								<div class="row">
+																									<div>
+																										<div class="card border-0">
+																											<div class="upper">
+																											  <img src="Profile Background/pg bg.jfif" class="img-fluid">																  
+																											</div>											
+																											<div class="user text-center">												  
+																											  <div class="profile">												  
+																												<img src="Profile/hhz.png" class="rounded-circle" width="80">																	
+																											  </div>											  
+																											</div>												  											  
+																											<div class="mt-5 text-center">											  
+																											  <h4 class="mb-0 text-dark">GodHanz(CoAdmin)</h4>
+																											  <span class="text-muted d-block mb-2">Yangon</span>											  
+																											  <button class="btn btn-outline-primary btn-sm follow">Follow</button>												  
+																											  <div class="d-flex justify-content-between align-items-center mt-4 px-4">											  
+																												<div class="stats">
+																												  <h6 class="mb-0">Followers</h6>
+																												  <span>6,969</span>								  
+																												</div>											  
+																												<div class="stats">
+																												  <h6 class="mb-0">Projects</h6>
+																												  <span>69</span>							  
+																												</div>				  
+																												<div class="stats">
+																												  <h6 class="mb-0">Ranks</h6>
+																												  <span>999+</span>												  
+																												</div>																	
+																											  </div>																  
+																											</div>																 
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																				<!--Add Friend-->
+																				<div class="modal" id="mymodalhhz2">
+																					<div class="modal-dialog">
+																						<div class="modal-content">
+																							<div class="modal-header border-0">
+																								<h5 class="mt-2">Friend Request Sent<i class="fa-solid fa-circle-check ms-2" style="color: limegreen;"></i></h5>
+																								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																		  <p class="card-text">Published : 15.5.2023</p>
+																		  <p class="card-text">Type : Hybrid Edition</p>
+																		</div>
+																		<div class="card-footer d-flex">
+																		  <button class="btn btn-outline-primary" style="border-radius: 40px;" data-bs-toggle="modal" data-bs-target="#mymodal3">Buy Now</button>
+																		  <p class="ms-5 ps-5 mt-2">Fl Price - 16.9
+																			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																				<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																			</svg>
+																		  </p>
+																		</div>
+																	  </div>
+																	</div>
+																  </div>
+																  <!--Buy Now-->
+																   <div class="modal" id="mymodal3">
+																		<div class="modal-dialog">
+																			<div class="modal-content">
+																				<div class="modal-header">
+																					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+																				</div>
+																				<div class="modal-body text-dark">
+																					<div class="container d-flex justify-content-center align-items-center mt-3" style="height: 70vh;">
+																						<div class="row">
+																								<div class="card" style="height: 65vh;">
+																									<h5>Fl Price-16.9
+																										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="13px" height="13px">
+																											<path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"/>
+																										</svg>
+																									</h5>														  											  
+																									  <div>
+																										<form class="shadow p-3 mt-3">
+																											<div class="my-3 form-floating">
+																												<input class="form-control" placeholder="email/username">
+																												<label for="email" class="text-muted">Bitcoin No.</label>
+																												<small class="form-text text-muted">Number must not include special characters.</small>
+																											</div>
+																											<div class="mb-3">
+																												<label for="psw" class="form-label">Password</label>
+																												<input class="form-control" placeholder="Password" id="psw">
+																											</div>
+																											<div class="mb-3">
+																												<label class="form-label"><input type="checkbox" name="Rememberme" class="form-check-input">Remember Me</label>
+																												<a href="#" class="float-end text-decroration-none">Reset Password</a>
+																											</div>
+																											<div>
+																												<button class="btn btn-primary">Pay Now</button>
+																											</div>
+																											<hr>
+																											<p class="text-center">If you have no account, <a href="#">Create Account</a></p>
+																										</form>
+																									</div>			
+																								</div>																 
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>								
+
+				</div>
+				<hr>
+				<div class="container-fluid bg-light">
+					<footer class="py-5">
+					  <div class="row">
+					  <div class="col-6 col-md-2 mb-3">
+						<ul class="nav flex-column">
+						<li class="nav-item mb-2 fw-bold"><a href="home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="Aboutus.html" class="nav-link p-0 text-body-secondary">About</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="Shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="login_form.html" class="nav-link p-0 text-body-secondary">Login</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="regristration_form.html" class="nav-link p-0 text-body-secondary">Register</a></li>
+						</ul>
+					  </div>
+					
+					  <div class="col-6 col-md-2 mb-3">
+						<ul class="nav flex-column">
+						<li class="nav-item mb-2 fw-bold"><a href="Single Edition.html" class="nav-link p-0 text-body-secondary">Single Edition</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="Limited Edition.html" class="nav-link p-0 text-body-secondary">Limited Edition</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="Standard Edition.html" class="nav-link p-0 text-body-secondary">Standard Edition</a></li>
+						</ul>
+					  </div>
+					
+					  <div class="col-6 col-md-2 mb-3">
+						<ul class="nav flex-column">
+						<li class="nav-item mb-2 fw-bold"><a href="Dynamic Edition.html" class="nav-link p-0 text-body-secondary">Dynamic Edition</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="Open Edition.html" class="nav-link p-0 text-body-secondary">Open Edition</a></li>
+						<li class="nav-item mb-2 fw-bold"><a href="Hybrid Edition.html" class="nav-link p-0 text-body-secondary">Hybrid Edition</a></li>
+						</ul>
+					  </div>
+					
+					  <div class="col-md-5 offset-md-1 mb-3">
+						<form>
+						<h5 class="fw-bold">Subscribe to our The Boyz Offical Website</h5>
+						<p class="">Get high quality NFTs with perfect price.</p>
+						<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+						  <label for="newsletter1" class="visually-hidden">Email address</label>
+						  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+						  <button class="btn btn-outline-danger" type="button">Subscribe</button>
+						</div>
+						</form>
+						<div class="back-to-top d-flex justify-content-end mt-4">
+						  <a href="#" class="link">Back to Top</a>
+						</div>
+					  </div>
+					  </div>
+					
+					  <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+						<p class="fw-bold mt-4">&copy; 2023 The Boyz Offical Website. All rights reserved.</p>
+						<ul class="list-unstyled d-flex">
+						  <h5 class="mt-4">Sponsored By</h5><h2 class="mt-3 ms-2">X</h2>
+						  <li class="me-5 mb-3"><a class="link-body-emphasis" href="#"><img src="footer_icon.png" alt="" width="100px"></a></li>
+						  <li class="ms-3 mt-4"><a class="link-body-emphasis" href="https://twitter.com/login"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="26" height="26"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
+						  <li class="ms-3 mt-4"><a class="link-body-emphasis" href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="26" height="26"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+						  <li class="ms-3 mt-4"><a class="link-body-emphasis" href="https://www.instagram.com/accounts/login/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" wdith="26" height="26"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a></li>
+						</ul>
+						</div>
+					</footer>
+					</div>
+			</div>
+			
+         </div>
+      </div>
+</body>
+</html>
